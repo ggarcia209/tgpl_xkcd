@@ -7,6 +7,9 @@ This application is composed of four files, 'xkcd_data.go', 'xkcd_ops.go', 'logD
 
 Running the program for the first time will create the 'comic_log.txt', 'xkcd_index.db', and 'log.db' files in the main/parent directory containing 'xkcd_ops.go'. 'xkcd_data.go', 'logData.pb.go', and 'logData.proto' are stored in the child directory, 'xkcd_data'. 
 
+Ex: store 'xkcd_ops.go' in 'go/src/xkcd' 
+    store 'xkcd_data.go', 'logData.pb.go', and 'logData.proto' in 'go/src/xkcd/xkcd_data'
+
 *** xkcd_data.go Overview ***
 
 The first file, 'xkcd_data.go' is used to download, format, and store the data for each comic in a boltDB database on disk. Additionally, it builds an inverted index for every term in each comic and writes the raw data for each comic to a .txt log. The inverted index is stored in the same database as the comic data under a different bucket. 
