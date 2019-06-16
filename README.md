@@ -45,7 +45,7 @@ After the common values have been found, the 'Num', 'Link', 'Title', and 'Transc
 
 *** Performance ***
 
-Building the index from scratch (~2160 JSON files, ~22,000 terms, ~2160 data structs as of 6/15/19) uses ~30MB RAM, ~10% (avg) of a 2.7 GHz Intel Core i7 processor, and takes about 2-3 minutes to complete. Viewing and searching the complete datasets is near instantaneous and takes ~1-3 seconds to return data. Performance data gathered from the MacOS Activity Monitor. 
+Building the index from scratch (~2160 JSON files, ~22,000 terms, ~2160 data structs as of 6/15/19) uses ~30MB RAM, ~10% (avg) of a 2.7 GHz Intel Core i7 processor, and takes about 2-3 minutes to complete. Viewing and searching the complete datasets is near instantaneous and takes < 1 seconds to return data for the largest result sets. Performance data gathered from the MacOS Activity Monitor. 
 
 *** Other Limitations ***
 * Subsequent executions panic if first execution fails to log Index.
