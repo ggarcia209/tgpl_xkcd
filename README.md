@@ -2,6 +2,7 @@
 Files for building search index of xkcd.com web comics - from Exercise 4.12 in The Go Programming Language
 
 *** Prerequisites ***
+
 Must have Protocol Buffers and BoltDb installed.
 
 *** Application Overview ***
