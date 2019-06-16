@@ -412,23 +412,3 @@ func Bstois(bs []byte) []int {
 	}
 	return is
 }
-
-// CURRENTLY DEPRECATED
-// pgraphSplit is a custom  SplitFunc that splits on every '¶' rune
-func pgraphSplit(data []byte, atEOF bool) (advance int, token []byte, err error) {
-	// Return nothing if at end of file with no data
-	if atEOF && len(data) == 0 {
-		return 0, nil, nil
-	}
-
-	// Find index of '¶' in text
-	if i := strings.Index(string(data), string('¶')); i >= 0 {
-		return i + 1, data[0:i], nil
-	}
-
-	// If at EOF with data, return the data
-	if atEOF {
-		return len(data), data, nil
-	}
-	return
-}
