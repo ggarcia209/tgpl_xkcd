@@ -1,6 +1,9 @@
 # tgpl_xkcd
 Files for building search index of xkcd.com web comics - from Exercise 4.12 in The Go Programming Language
 
+*** Prerequisites ***
+Must have Protocol Buffers and BoltDb installed.
+
 *** Application Overview ***
 
 This application is composed of four files, 'xkcd_data.go', 'xkcd_ops.go', 'logData.pb.go', and 'logData.proto'. This application builds a searchable index from the JSON metadata of every web comic on xkcd.com. This is a fairly simple search engine and does not yet implement more advanced features such as stemming, normalization, and positional indexing. 
