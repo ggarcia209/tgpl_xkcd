@@ -1,5 +1,6 @@
 # tgpl_xkcd
 Files for building search index of xkcd.com web comics - from Exercise 4.12 in The Go Programming Language
+Version 1.0
 
 *** Prerequisites ***
 
