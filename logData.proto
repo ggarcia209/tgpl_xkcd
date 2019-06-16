@@ -1,0 +1,18 @@
+syntax="proto3";
+
+package xkcd;
+
+message LogDataStruct{
+    string Month = 1;
+    int32  Num = 2;
+    string Link = 3;
+    string Year = 4;
+    string News = 5;
+    string SafeTitle = 6;
+    string Transcript = 7;
+    string Alt = 8;
+    string Img = 9;
+    string Title = 10;
+    string Day =  11;
+}
+
